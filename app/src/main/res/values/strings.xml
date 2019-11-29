@@ -1,0 +1,17 @@
+<resources>
+  <string name="app_name">GVoiceTester</string>
+  <string name="set_app_info">初始化设置</string>
+  <string name="init_engine">初始引擎</string>
+  <string name="open_id_hint">OPEN_ID</string>
+  <string name="room_id_hint">ROOM_ID</string>
+  <string name="room_id_default">ROOM_ID_DEFAULT</string>
+  <string name="join_room">加入房间</string>
+  <string name="quit_room">退出房间</string>
+  <string name="open_mic">打开麦克风</string>
+  <string name="close_mic">关闭麦克风</string>
+  <string name="open_speaker">打开扬声器</string>
+  <string name="close_speaker">关闭扬声器</string>
+  <string name="logger">日志记录</string>
+  <string name="mic_level">mic:</string>
+  <string name="speaker_level">speaker:</string>
+</resources>

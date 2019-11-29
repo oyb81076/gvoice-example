@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <GridLayout
+      android:columnCount="4"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+    <EditText android:id="@+id/open_id" android:layout_width="match_parent" android:hint="@string/open_id_hint"  />
+    <EditText android:id="@+id/room_id" android:layout_width="match_parent" android:hint="@string/room_id_hint" android:text="@string/room_id_default" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+      <Button
+          android:id="@+id/set_app_info"
+          android:text="@string/set_app_info"
+          style="?android:attr/buttonStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"/>
+      <Button
+          android:id="@+id/init_engine"
+          android:text="@string/init_engine"
+          style="?android:attr/buttonStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/join_room"
+          android:text="@string/join_room"
+          style="?android:attr/buttonStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" />
+      <Button
+          android:id="@+id/quit_room"
+          android:text="@string/quit_room"
+          style="?android:attr/buttonStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/open_mic"
+          android:text="@string/open_mic"
+          style="?android:attr/buttonStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" />
+      <Button
+          android:id="@+id/close_mic"
+          android:text="@string/close_mic"
+          style="?android:attr/buttonStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/open_speaker"
+          android:text="@string/open_speaker"
+          style="?android:attr/buttonStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"/>
+      <Button
+          android:id="@+id/close_speaker"
+          android:text="@string/close_speaker"
+          style="?android:attr/buttonStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:id="@+id/mic_level" android:text="@string/mic_level" />
+    <TextView android:id="@+id/speaker_level" android:text="@string/speaker_level" />
+    <TextView android:id="@+id/logger" android:text="@string/logger" android:textSize="12sp" />
+  </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
